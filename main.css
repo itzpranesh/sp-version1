@@ -1,0 +1,189 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+  font-size: 1.15rem;
+}
+body{
+  font-family: 'Cormorant Garamond', serif;
+  line-height: 1.5em;
+  display: grid;
+  grid-template-columns: 6% auto 6%;
+  grid-template-rows: auto;
+}
+#sphomelink{
+text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+h1{
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+a{
+  color: black;
+  text-decoration-color: #1D8348;
+}
+a:visited{
+  color: black;
+  text-decoration-color: #EDBB99;
+}
+a:hover{
+  color: #196F3D;
+}
+ul, ol{
+  list-style-position: inside;
+  margin-bottom: 15px;
+}
+p, ul, ol{
+  margin: 20px 0;
+}
+article{
+  margin-top: 15px;
+}
+/* header */
+
+.headwrap{
+  grid-column: 1 / -1;
+  margin-bottom: 20px;
+  padding:2% 4%;
+  background-color: #E5E7E9;
+}
+.head1{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.search-icon{
+  width: 25px;
+}
+.nav-links{
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+  width: 100%;
+  justify-content: center;
+
+  }
+.navlink{
+  text-decoration: none;
+  font-size: .9rem;
+  margin: 0 15px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+
+
+}
+
+/* main */
+main{
+  grid-column: 2 / 3;
+  min-height: 80vh;
+}
+.section-1{
+  text-align: center;
+  margin-bottom: 30px;
+}
+.recent-post{
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 10px;
+}
+
+/* footer */
+.footer-div{
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #E5E7E9;
+  height: 50px;
+  margin-top: 50px;
+
+}
+footer{
+  font-size: .75rem;
+  color: #808B96;
+}
+
+/* teblet potrait*/
+@media (min-width: 600px) and (max-width: 899px) {
+  *{
+    font-size: 1.3rem;
+  }
+  body{
+    display: grid;
+    grid-template-columns: 10% auto 10%;
+  }
+  h1{
+    font-size: 1.4rem;
+  }
+    .navlink{
+    font-size: 1rem;
+    margin: 0 20px;
+  }
+  footer{
+    font-size: .9rem;
+  }
+}
+
+/* teblet landscape */
+@media (min-width: 900px){
+  *{
+    font-size: 1.5rem;
+  }
+  body{
+    grid-template-columns: 15% auto 15%;
+  }
+  h1{
+    font-size: 1.4rem;
+  }
+  .head1{
+    width: 85%;
+  }
+  .headwrap{
+    padding:2% 4%;
+  }
+  .navlink{
+    margin: 0 30px;
+  }
+}
+
+/* desktop */
+@media (min-width: 1200px){
+  *{
+    font-size: 1.3rem;
+  }
+  .mainhead{
+    width: 70%;
+    margin: 0 auto;
+  }
+  body{
+    grid-template-columns: 25% auto 25%;
+
+  }
+  .navlink{
+    font-size: .85rem;
+  }
+  .headwrap{
+
+    padding:.5% 0;
+  }
+  .head1{
+    margin: 0 auto;
+  }
+  .nav-links{
+    margin: 5px auto 8px;
+  }
+}
+
+/* @media screen and (min-width: 1900px){
+  *{
+    font-size: 1rem;
+  }
+} */
